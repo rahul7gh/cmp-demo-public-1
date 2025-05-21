@@ -5,7 +5,7 @@ parser.add_argument("--ipaddress", type=str, help="ipaddress")
 parser.add_argument("--machine_name", type=str, help="machine_name")
 
 args = parser.parse_args()
-output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"2","memory":"16384MB","disk":"131072MB"}
+output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"16","memory":"16384MB","disk":"131072MB"}
 print(json.dumps({"output":output}))
 
 
