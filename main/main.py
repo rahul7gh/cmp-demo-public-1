@@ -14,7 +14,7 @@ try:
     response.raise_for_status()  # Raise exception for HTTP errors
     data = response.json()
     output=json.dumps({"output": {"ip": data["ip"]}})
-    print()
+    print(output)
 except requests.RequestException as e:
     print(json.dumps({"output": {"error": "An error occurred:"+ str(e)}}))
     
