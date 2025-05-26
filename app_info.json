@@ -1,7 +1,6 @@
 {
   "app_name": "xyz",
   "arguments": {
-    "ipaddress": "192.168.92.12",
-    "machine_name": "gcc_host_1765"
+   
   }
 }
