@@ -13,7 +13,9 @@ try:
     response = requests.get(url)
     response.raise_for_status()  # Raise exception for HTTP errors
     data = response.json()
-    output=json.dumps({"output": {"ip": data["ip"],"cpu":"16","memory":"16384MB","disk":"131072MB"}})
+    #output=json.dumps({"output": {"ip": data["ip"],"cpu":"16","memory":"16384MB","disk":"131072MB"}})
+
+    output=json.dumps({"output": {"ip": data["ip"],"hostname":"gcc-dummy-host1"}})
     print(output)
 except requests.RequestException as e:
     print(json.dumps({"output": {"error": "An error occurred:"+ str(e)}}))
