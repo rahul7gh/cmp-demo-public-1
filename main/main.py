@@ -1,12 +1,12 @@
 import argparse
 import json
 import requests
-parser = argparse.ArgumentParser(description="Process extra vars")
-parser.add_argument("--ipaddress", type=str, help="ipaddress")
-parser.add_argument("--machine_name", type=str, help="machine_name")
+#parser = argparse.ArgumentParser(description="Process extra vars")
+#parser.add_argument("--ipaddress", type=str, help="ipaddress")
+#parser.add_argument("--machine_name", type=str, help="machine_name")
 
-args = parser.parse_args()
-output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"16","memory":"16384MB","disk":"131072MB"}
+#args = parser.parse_args()
+#output={"ipaddress":args.ipaddress,"machine_name":args.machine_name,"cpu":"16","memory":"16384MB","disk":"131072MB"}
 
 url = "https://api.ipify.org?format=json"
 try:
